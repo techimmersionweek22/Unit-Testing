@@ -1,6 +1,6 @@
 import unittest
 from tutorial import *
-from mock import patch, Mock
+from unittest.mock import patch, Mock
 
 class TestBasicCommands(unittest.TestCase):
     # Basic Assert Methods
@@ -46,7 +46,7 @@ class TestBasicCommands(unittest.TestCase):
         
 class TestFixtures(unittest.TestCase):
     def setUp(self):
-        print("Setting up the database")
+        # print("Setting up the database")
         self.database = {
             1: "Jon Smith",
             2: "Katie Johnson",
@@ -62,7 +62,7 @@ class TestFixtures(unittest.TestCase):
         self.assertEqual(student_name, None)
         
     def tearDown(self):
-        print("Clearing the database")
+        # print("Clearing the database")
         self.database = {}
         
 class TestMocking(unittest.TestCase):
