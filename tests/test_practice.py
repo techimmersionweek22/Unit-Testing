@@ -1,6 +1,4 @@
 import unittest
-from practice import Client
-from mock import patch, Mock
 
 class TestPractice(unittest.TestCase):
     @unittest.skip("TODO")
